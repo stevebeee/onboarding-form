@@ -70,3 +70,16 @@ h1 {
 .name-item {
   flex: 1;
 }
+
+@media (max-width: 600px) {
+  .container {
+      margin: 0;
+      max-width: 100%;
+      min-height: 100vh;
+  }
+
+  .name-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
