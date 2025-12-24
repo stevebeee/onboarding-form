@@ -1,0 +1,72 @@
+$background-color: #e6e7e8;
+$container-bg: #FFF;
+$border-color: #ccc;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $background-color;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.container {
+  background-color: $container-bg;
+  border: 2px solid $border-color;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.input-field {
+  input {
+    border-radius: 8px;
+    height: 48px;
+  }
+
+  .ant-form-item-label {
+    padding-bottom: 4px;
+
+    label {
+      font-weight: 700;
+    
+      &::before {
+        display: none !important;
+      }
+    }
+  }
+
+  .ant-form-item-control-input {
+    .ant-input-status-error {
+      border-color: $border-color !important;
+    }
+  }
+}
+
+.submit-btn {
+  .ant-btn-primary {
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #FFF;
+    background-color: #000;
+
+    &:hover {
+      background-color: #000 !important;
+      opacity: 0.6;
+    }
+  }
+}
+
+.name-row {
+  display: flex;
+  gap: 20px;
+}
+
+.name-item {
+  flex: 1;
+}
